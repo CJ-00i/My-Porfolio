@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="activitypannel.css">
+  <title>Activity 2</title>
+</head>
+<body>
+  <nav class="top">
+    <ul>
+      <li><a href="activity1.html">Activity 1</a></li>
+      <li><a class="active" href="#">Activity 2</a></li>
+      <li><a href="activity3.html">Activity 3</a></li>
+      <li><a href="activity4.html">Activity 4</a></li>
+      <li><a href="activity5.html">Activity 5</a></li>
+      <li><a href="activity6.html">Activity 6</a></li>
+    </ul>
+  </nav>
+  <center>
+  <h1>My First JavaScript</h1>
+  <p id="demo">JavaScript can change the style of an HTML element.</p>
+  <button type="button" onclick="activityTwo()">Change Style!</button>
+  </center>
+</body>
+<script>
+  var sw = 0;
+  function activityTwo() {
+    if (sw == 0) {
+      document.getElementById("demo").style.fontSize = "25px";
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";
+      sw += 1;
+    } else {
+      document.getElementById("demo").style.fontSize = "";
+      document.getElementById("demo").style.color = "";
+      document.getElementById("demo").style.backgroundColor = "";
+      sw -= 1;
+    }
+  }
+</script>
+</html>

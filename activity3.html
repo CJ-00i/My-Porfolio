@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="activitypannel.css">
+  <title>Activity 3</title>
+</head>
+<body>
+  <nav class="top">
+    <ul>
+      <li><a href="activity1.html">Activity 1</a></li>
+      <li><a href="activity2.html">Activity 2</a></li>
+      <li><a class="active" href="#">Activity 3</a></li>
+      <li><a href="activity4.html">Activity 4</a></li>
+      <li><a href="activity5.html">Activity 5</a></li>
+      <li><a href="activity6.html">Activity 6</a></li>
+    </ul>
+  </nav>
+  <center>
+  <h1>My First JavaScript</h1>
+  <p id="demo">JavaScript can change the value of the src (source) attribute of an image.</p>
+  <img id="myImage" src="asset/bulbOff.png" alt="bulb"><br>
+  <button type="button" onclick="activityTwo(1)">Lights On!</button>
+  <button type="button" onclick="activityTwo(0)">Lights Off!</button>
+  </center>
+</body>
+<script>
+  function activityTwo(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "asset/bulbOff.png";
+    } else {
+      pic = "asset/bulbOn.png";
+    }
+    document.getElementById("myImage").src = pic;
+  }
+</script>
+</html>

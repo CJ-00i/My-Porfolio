@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="activitypannel.css">
+  <title>Activity 1</title>
+</head>
+<body>
+  <nav class="top">
+    <ul>
+      <li><a class="active" href="#">Activity 1</a></li>
+      <li><a href="activity2.html">Activity 2</a></li>
+      <li><a href="activity3.html">Activity 3</a></li>
+      <li><a href="activity4.html">Activity 4</a></li>
+      <li><a href="activity5.html">Activity 5</a></li>
+      <li><a href="activity6.html">Activity 6</a></li>
+    </ul>
+  </nav>
+  <center>
+  <br>
+  <h1>My First JavaScript</h1>
+  <p>JavaScript can change the content of an HTML element:</p>
+  <button type="button" onclick="activityOne()">Click Me!</button>
+  <p id="demo">This is a demostration.</p>
+  </center>
+</body>
+<script>
+  var sw = 0;
+  function activityOne() {
+    if (sw == 0) {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      sw += 1;
+    } else {
+      document.getElementById("demo").innerHTML = "This is a demostration.";
+      sw -= 1;
+    }
+  }
+</script>
+</html>
